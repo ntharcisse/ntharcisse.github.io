@@ -1,0 +1,281 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  }
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
+
+
+body{
+    background-color: rgb(3, 1, 10);
+    color: rgb(69, 73, 79);
+    margin: 20px;
+    padding: 20px;
+
+}
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgb(26, 24, 22);
+    z-index: 9999;
+    left: 0;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 8%;
+    font-size: 20px;
+}
+
+.logo{
+    /* color:white; */
+    font-size: 25px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+span{
+    color: rgb(42, 169, 174);
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1px 25px;
+
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+li :hover{
+    text-decoration: underline;
+    color: aqua;
+    font-size: 20px;
+}
+
+#link :hover{
+    font-size: 40px;
+    
+}
+
+.social-contact li{
+    list-style-type: none;
+    font-size: 30px;
+
+}
+
+.main{
+    color: rgb(78, 75, 75);
+
+}
+
+.name-section{
+    display: flex;
+    padding-left: 30px;
+}
+
+.names{
+    padding-right: 50px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: auto;
+    padding:40px;
+}
+
+.names{
+    position: relative;
+    font-size: 40px;
+    padding-top:10%;
+    left: 9%;
+}
+
+.names .greeting,.firstname,.last-name{
+    display: grid;
+}
+.names , .image img{
+    display: flex;
+}
+.image img{
+    position: relative;
+    width: 70%;
+    height: 70%;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: aqua;
+    top: 50%;
+    float: right;
+    filter: blur(3px);
+    opacity: 100%;
+    color: black;
+    z-index: 1;
+    border-start-end-radius: 700px;
+    border-end-start-radius: 900px;}
+
+ .social-contact{
+    position: relative;
+    display: flex;
+    /* left: 8%; */
+}
+
+.social-contact li{
+    padding: 20px;
+}
+
+.social-contact a{
+    color: white;
+    text-decoration: none;
+}
+
+.social-contact  #email{
+    color: red;
+    font-weight: bold;
+
+}
+.social-contact #linkedin{
+    position: relative;
+    /* background-color: rgb(74, 40, 198); */
+    color: rgb(221, 221, 230);
+    padding: 5px;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    
+}
+
+.social-contact #resume{
+    background-color: rgb(179, 117, 117);
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(172, 172, 192);
+    
+}
+
+.main-content{
+    color: white;
+
+}
+
+.intro-about,.intro-skills,.social-contact,.intro-projects{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    left: 13%;
+    width: 50%;
+    font-size: 24px;
+}
+
+.intro-about,.intro-skills{
+    padding: 20px;
+}
+
+.intro-about p{
+    color: rgb(142, 134, 124);
+}
+
+.intro-about .h-1,.h-1-skills{
+    font-size: 23px;
+    color: greenyellow;
+}
+
+.intro-skills{
+    color:white;
+
+}
+
+.stack-fonts{
+    color: white;
+}
+
+.stack-fonts span{
+    position: relative;
+    /* width: 100px; */
+    justify-content: center;
+    color: rgb(186, 177, 177);
+    background-color: rgb(23, 43, 43);
+    border-style: solid;
+    border-color: rgb(19, 132, 70);
+    padding: 6px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+.fa{
+    display: flex;
+}
+
+.project-1{
+    /* display: grid; */
+    background-color: rgb(5, 3, 23);
+    padding: 10px;
+    border-radius: 5px;
+    border-color: rgb(9, 101, 106);
+    border-style:dashed;
+}
+
+
+.project-1 p{
+    position: relative;
+    font-size: 20px;
+    color: rgb(129, 131, 133);
+    font-style: italic;
+}
+
+.tools-used span{
+    color: white;
+    background-color: rgb(105, 19, 97);
+    border-style: solid;
+    border-color: rgb(94, 50, 23);
+    border-radius: 5px;
+    padding: 5px;
+}
+.intro-projects a{
+    position:relative;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(132, 24, 128);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.project-2{
+    position: relative;
+    top: 40px;
+    /* display: grid; */
+    background-color: rgb(5, 3, 23);
+    padding: 10px;
+    border-radius: 5px;
+    border-color: rgb(9, 101, 106);
+    border-style:dashed;
+}
+
+
+
+
+
+
