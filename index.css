@@ -7,7 +7,7 @@ html{
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
   }
   @supports (font-variation-settings: normal) {
-    :root { font-family: InterVariable, sans-serif; }
+    :root,body { font-family: InterVariable, sans-serif; }
   }
 
 
@@ -40,6 +40,7 @@ nav{
     font-size: 20px;
 }
 
+
 .logo{
     /* color:white; */
     font-size: 25px;
@@ -69,6 +70,12 @@ li :hover{
     text-decoration: underline;
     color: aqua;
     font-size: 20px;
+}
+
+a:hover{
+    background: linear-gradient(45deg,red,aqua);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 #link :hover{
@@ -115,21 +122,19 @@ li :hover{
 .names , .image img{
     display: flex;
 }
-.image img{
+img{
     position: relative;
-    width: 70%;
-    height: 70%;
-    border-radius: 6px;
+    width: 45%;
+    height: 90%;
+    border-radius: 100%;
     border-style: solid;
-    border-color: aqua;
-    top: 50%;
-    float: right;
-    filter: blur(3px);
-    opacity: 100%;
-    color: black;
+    border-color: rgb(38, 42, 42);
+    border-width: 30px;
     z-index: 1;
-    border-start-end-radius: 700px;
-    border-end-start-radius: 900px;}
+    float: right;
+    top:20%;
+
+}
 
  .social-contact{
     position: relative;
