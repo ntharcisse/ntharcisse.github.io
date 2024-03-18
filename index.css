@@ -313,8 +313,9 @@ a {
     
     .names {
         font-size: 16px;
-        padding-top: 5%;
-        left: 5%;
+        padding-top: 10%;
+        left: 0;
+        margin-top: 20px;
     }
     
     .social-contact li {
@@ -322,7 +323,7 @@ a {
     }
     
     .quotes {
-        right: 10%;
+        left: 3%;
         width: 80%;
         font-size: 16px;
         margin-bottom: 20px;
@@ -330,18 +331,20 @@ a {
     
     .intro-about,
     .intro-skills,
-    .social-contact {
-        left: 5%;
-        width: 80%;
+    .social-contact,#p-1 {
+        left: 0;
+        right: 10%;
+        width: 90%;
         font-size: 20px;
     }
     
     .projects {
-        padding: 20px;
+        padding: 10px;
     }
     
     #p-1 {
-        width: 80%;
+        width: 100%;
+        left: 0;
     }
 }
 
