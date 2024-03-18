@@ -83,8 +83,16 @@ li:hover {
     color: white;
 }
 
+nav li a{
+    background: linear-gradient(45deg, hsl(9, 11%, 87%),rgb(226, 225, 235));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 a {
-    background: linear-gradient(30deg, hsl(178, 98%, 49%), rgb(14, 244, 244));
+    background: linear-gradient(45deg, hsl(10, 95%, 47%),rgb(26, 9, 156));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -387,6 +395,11 @@ a {
 @media screen and (max-width: 800px) {
     nav ul li {
         padding: 1px 5px;
+        /* display: block; */
+    }
+
+    nav a{
+        display: none;
     }
     
     .names {
