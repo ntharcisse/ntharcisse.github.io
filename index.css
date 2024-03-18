@@ -308,11 +308,12 @@ a {
 
 @media screen and (max-width: 800px) {
     nav ul li {
-        padding: 5px 10px;
+        padding: 1px 5px;
     }
     
     .names {
-        font-size: 16px;
+        font-size: 15px;
+        padding: 2px;
         padding-top: 10%;
         left: 0;
         margin-top: 20px;
@@ -320,11 +321,13 @@ a {
     
     .social-contact li {
         font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10%;
     }
     
     .quotes {
         left: 3%;
-        width: 80%;
+        width: 100%;
         font-size: 16px;
         margin-bottom: 20px;
     }
@@ -344,7 +347,14 @@ a {
     
     #p-1 {
         width: 100%;
-        left: 0;
+        padding: 10px;
+        border-color:rgb(20, 20, 30) ;
+    }
+    #btn{
+        position: relative;
+        /* display: grid; */
+        justify-content: center;
+        left: 4%;
     }
 }
 
