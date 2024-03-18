@@ -258,7 +258,12 @@ a {
     position: relative;
 
 }
-
+.projects .h-1{
+    display: grid;
+    justify-content: center;
+    font-size: 23px;
+    color: greenyellow;
+}
 .map-projects{
     display: flex;
     flex-direction: row;
