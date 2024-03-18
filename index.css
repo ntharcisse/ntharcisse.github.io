@@ -10,6 +10,21 @@ html {
         font-family: InterVariable, sans-serif;
     }
 }
+css-doodle {
+    --rule: (
+      @grid: 5 / 8em;
+      --d: @p(45deg, -45deg, 135deg, -135deg);
+      --lg: linear-gradient(@var(--d),#60569e 50%,#000 0);
+      background:
+        @var(--lg) 0 0 / 100% 100%,
+        @var(--lg) 0 0 / 50% 50%;
+    );
+    
+  }
+#css-doodle{
+    display: grid;
+    justify-content: center;
+}
 
 body {
     background-color: rgb(3, 1, 10);
@@ -60,13 +75,36 @@ li:hover {
     color: aqua;
     font-size: 20px;
 }
+#toggle-icon{
+    color: white;
+}
+
+#toggle-icon:hover{
+    color: white;
+}
 
 a {
-    background: linear-gradient(45deg, red, aqua);
+    background: linear-gradient(30deg, hsl(178, 98%, 49%), rgb(14, 244, 244));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
+
+#email{
+    background: linear-gradient(70deg, rgb(244, 33, 5), rgb(3, 251, 61));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+
+.projects a{
+    background: linear-gradient(45deg, rgb(118, 5, 80), rgb(219, 237, 189));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
 
 #link:hover {
     font-size: 20px;
@@ -192,6 +230,8 @@ a {
 #message{
     color:beige;
 }
+/* blocking bar */
+
 
 /* about me introduuction section */
 
@@ -204,6 +244,7 @@ a {
     border-radius: 3px;
     padding: 9px;
     margin-top: 30px;
+    font-style: italic;
 }
 
 
@@ -223,13 +264,14 @@ a {
 }
 
 .intro-about p {
-    color: rgb(179, 176, 172);
+    color: hwb(40 93% 4%);
     margin-bottom: 20px;
     margin-top: 20px;
+    opacity: 2px;
 }
 
 .intro-about .h-1,
-.h-1-skills {
+.h-1-skills,.tools .h-1 {
     display: grid;
     justify-content: center;
     font-size: 23px;
@@ -247,7 +289,38 @@ a {
 .stack-fonts {
     color: white;
 }
+/* tools */
+.tools{
+    position: relative;
+    display: grid;
+    justify-content: center;
+}
+.tools #p-2{
+    position: relative;
+    width: 100%;
+    padding: 8px;
+}
 
+#p-2 button{
+    background-color: rgb(22, 192, 129);
+    color: #273032;
+    font-size: medium;
+    font-weight: bold;
+    padding: 6px;
+    width: 90px;
+    border: none;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(146, 149, 148);
+
+}
+
+.aligns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
 
 /* projects */
 .projects{
@@ -272,14 +345,14 @@ a {
 }
 #p-1 p{
     color: rgb(180, 182, 184);
-    padding: 4px;
+    padding: 0px;
     font-size: 19px;
 }
 
 #p-1{
-    background-color: black;
+    background-color: #000000e7;
     border-style: solid;
-    border-color: rgb(3, 13, 28);
+    border-color: rgb(22, 33, 49);
     padding: 10px;
     width: 30%;
     justify-content: center;

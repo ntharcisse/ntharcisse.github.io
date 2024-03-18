@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My personal portfolio</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="Javascript" href="animate.js">
+    <link rel="Javascript" href="script.js">
+    <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.38.4/css-doodle.min.js"></script> <!--doodle css-->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -25,6 +27,8 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li id="toggle-icon" onclick="toggle()"><i class="fa fa-adjust"></i></li>
                 
             </ul>
         </nav>
@@ -34,35 +38,70 @@
         <section class="introduction">
             <div class="name-section">
                 <div class="names">
-                    <h1 class="greeting" >HI, I am <span class="firstname">Tharcisse Ntirandekura</span> <span class="last-name"><span id="arrow-1">→</span>Computer Scientist</span></h1>
+                    <h1 class="greeting" >HI, I am <span class="firstname">Tharcisse Ntirandekura</span> <span class="last-name"><span id="arrow-1">→</span>Computer Scientist</
                 </div>
             </div>
+            <css-doodle id="css-doodle" use="var(--rule)"></css-doodle>
+
         </section>
         <section class="social-contact">
             <li><a id="resume" href="path/to/resume.pdf" download>Resume</a></li>
-            <li><a id ="email" href="mailto:tntirand@oberlin.edu" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+            <li><a id="email" href="mailto:tntirand@oberlin.edu" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
             <li><a id="github" href="https://github.com/tharcissentirandekura" target="_black"><i class="fa fa-github"></i></a></li>
             <li><a id ="linkedin" href="https://www.linkedin.com/in/tharcisse-ntirandekura-8a7aa3246" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a id ="linkedin" href="https://www.linkedin.com/in/tharcisse-ntirandekura-8a7aa3246" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a id ="linkedin" href="https://www.linkedin.com/in/tharcisse-ntirandekura-8a7aa3246" target="_blank"><i class="fa fa-instagram"></i></a></li>
         </section>
-    </main>
-    <div class="message-box">
-        <div class="quotes">
-            <p>
-                <span id="arrow">→</span><span id='message'>"Software is like entropy: It is difficult to grasp, weighs nothing, and obeys the second law of thermodynamics; i.e., it always increases."</span>
-            </p>
-        </div>
+    
+        <div class="message-box">
+            <div class="quotes">
+                <p>
+                    <span id="arrow">→</span><span id='message'>"Software is like entropy: It is difficult to grasp, weighs nothing, and obeys the second law of thermodynamics; i.e., it always increases.------ said by ?"</span>
+                </p>
+            </div>
 
-    </div>
+        </div>
+    </main>
+
+    <section class="blocking-bar">
+        <div id="line">
+            <h1>|</h1>
+        </div>
+    </section>
 
     <div class="intro-about">
         <h1 id="about" class="h-1">~ About me</h1>
         <h2 class="h-2">Introduction</h2>
         <div class="paragraph-1">
             <p>
-                I am Tharcisse a software engineer and data scientist. I am a computer science student passionate about solving daily small challenges that can make a big impact on our development. I develop and design apps that helps students, and teachers improve classroom experience. I also do web as a full stack developper. I am studying computer science at <span style="color: hsl(348, 86%, 52%);"> Oberlin College.</span>
+                I am Tharcisse, a software engineer and data scientist. As a computer science student, I am deeply passionate about software development and its security. I believe that by addressing the challenges and vulnerabilities in software systems, we can create a safer digital environment for everyone.
+
+                In my journey as a software developer, I constantly strive to improve my skills and knowledge in order to build robust and secure applications. I am fascinated by the intricate details of software architecture, algorithms, and data structures, and I enjoy finding innovative solutions to complex problems.
             </p>
         </div>
     </div>
+
+    <section class="tools">
+        <h1 class="h-1">~ Tools</h1>
+        <div id="p-2" class="p-1">
+            <div class="aligns">
+                <button>Java</button>
+                <button>Python</button>
+                <button>Javascript</button>
+                <button>Sql</button>
+                <button>Bash</button>
+                <button>Html5</button>
+                <button>Css3</button>
+                <button>Chart.js</button>
+                <button>Linux</button>
+
+            </div>
+
+        
+        </div>
+
+
+    </section>
 
     <section id="projects" class="projects">
         <h1 class="h-1">~ Projects</h1>
@@ -73,6 +112,7 @@
                    <p><span id="arrow">→</span> Give you ability to visualize sequences over each input</p>
                     <p><span id="arrow">→</span> Easy to navigate</p>
                     <p><span id="arrow">→</span> More customizable for new learners</p>
+                    <p><span id="arrow">→</span> Integrated a collatz math based game to help people understand the topics</p>
                     <p><span id="arrow">→</span> <a href="http://tharack.pythonanywhere.com/graph" target="_blank">Visit here</a></p>
                 </p>
                 <div id="btn">
@@ -102,8 +142,8 @@
 
                     <p>
                         <p><span id="arrow">→</span> Simulated brain activity for actions processing</p>
-                        <p><span id="arrow">→</span> Made python Visualizer</p>
-                        <p><span id="arrow">→</span> <a href="http://">Visit here</a></p>
+                        <p><span id="arrow">→</span> Made octave Visualizer</p>
+                        <p><span id="arrow">→</span> <a href="http://">Visit here <a class="fa fa-github" href="https://github.com/tharcissentirandekura" target="_blank"></a></a></p>
 
                     </p>
                     <div id="btn">
@@ -122,15 +162,33 @@
                 </p>
                 <div id="btn">
                     <button>javascript</button>
-                    <button>Html5</button>
-                    <button>css3</button>
+                    <button <span class="fa fa-html5" style="color: rgb(194, 222, 36);"></span><span style="color: black;">Html5</span></button>
+                    <button <span class="fa fa-css3" style="color: rgb(52, 16, 232);"></span><span style="color: black;">Css</span></button>
                     <button>Netlify</button>
                 </div>
 
             </div>
 
+            <div id="p-1" class="p-5">
+                <h1>Tic-Tac-Toe</h1>
+
+                    <p>
+                        <p><span id="arrow">→</span>Made a tic tac toe game to have fun :)</p>
+                        <p><span id="arrow">→</span> Build in python</p>
+                        <p><span id="arrow">→</span> <a href="http://">Visit here <a class="fa fa-github" href="https://github.com/tharcissentirandekura" target="_blank"></a></a></p>
+
+                    </p>
+                    <div id="btn">
+                        <button>Python3</button>
+                        <button>Vs Code</button>
+                        <button>Git</button>
+                        <button>Github</button>
+                    </div>
+            </div>
+
         </div>
 
     </section>
+
 </body>
 </html>
