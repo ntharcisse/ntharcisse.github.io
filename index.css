@@ -304,6 +304,8 @@ a {
     justify-content: center;
 }
 .tools #p-2{
+    display: grid;
+    justify-content: center;
     position: relative;
     width: 100%;
     padding: 8px;

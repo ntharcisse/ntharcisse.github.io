@@ -3,7 +3,6 @@ let isWhite = false;
 function toggle() {
     const colorChange = document.querySelector("#toggle-icon");
     colorChange.addEventListener("click", function() {
-        console.log("button clicked");
         let body = document.querySelector("body");
         let allElements = document.querySelectorAll("body");
 
