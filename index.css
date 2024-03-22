@@ -27,10 +27,11 @@ css-doodle {
 }
 
 body {
-    background-color: rgb(3, 1, 10);
+    background-color: rgb(4, 1, 11);
     color: rgb(69, 73, 79);
     margin: 20px;
     padding: 20px;
+    font-size: 25px;
 }
 
 header {
@@ -236,7 +237,9 @@ a {
     font-size: 20px;
 }
 #message{
-    color:beige;
+    color:rgb(176, 176, 169);
+    font-size: 25px;
+    word-spacing: 2px;
 }
 /* blocking bar */
 
@@ -272,10 +275,17 @@ a {
 }
 
 .intro-about p {
-    color: hwb(40 93% 4%);
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     */
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(95, 94, 92);
     margin-bottom: 20px;
     margin-top: 20px;
     opacity: 2px;
+    font-size: 25px;    
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    font-style: normal;
 }
 
 .intro-about .h-1,
