@@ -265,27 +265,29 @@ a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
     left: 13%;
-    width: 60%;
-    font-size: 24px;
+    width: 80%;
+    font-size: 20px;
 }
 
 .intro-about,
 .intro-skills {
     padding: 20px;
 }
+.intro-about{
+    width: 80%;
+}
 
 .intro-about p {
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     */
-    font-family:'Times New Roman', Times, serif;
-    color: rgb(95, 94, 92);
+    font-family: monospace;
+    color: rgb(179, 177, 173);
     margin-bottom: 20px;
     margin-top: 20px;
     opacity: 2px;
     font-size: 25px;    
-    letter-spacing: 1.5px;
-    word-spacing: 3px;
-    font-style: normal;
+    /* letter-spacing: 1.5px; */
+    /* word-spacing: 3px; */
+    font-style: italic;
+
 }
 
 .intro-about .h-1,
@@ -320,6 +322,37 @@ a {
     width: 100%;
     padding: 8px;
 }
+
+.tools-page{
+    /* background-color: rgb(197, 160, 160); */
+    display: flex;
+    gap:30px;
+    overflow-x: scroll
+}
+
+
+#image-1,
+#image-2,
+#image-3,
+#imge-4,
+#image-5,
+#image-6,
+#image-7,
+#image-8,
+#image-9,
+#image-10
+{
+    background-color: rgb(3, 15, 51);
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+    height: 80px;
+    border-style: groove;
+    border-color: rgb(95, 94, 97);
+    border-width: 4px;
+    white-space: nowrap;
+}
+
 
 #p-2 button{
     background-color: rgb(22, 192, 129);
@@ -363,6 +396,26 @@ a {
     flex-wrap: wrap;
     gap: 20px;
 }
+
+/* 
+.p-4,.p-5,.p6{
+    display: block;
+    background-color: red;
+}
+.scroll{
+    position:relative;
+    display: grid;
+    justify-content: center;
+    left: 40%;
+} */
+
+/* #image-a{
+
+    background-color: rgb(242, 243, 246);
+    width: 100px;
+    height: 25px;
+    font-size: 30px;
+} */
 #p-1 p{
     color: rgb(180, 182, 184);
     padding: 0px;

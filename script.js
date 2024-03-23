@@ -21,3 +21,21 @@ function toggle() {
         }
     });
 }
+
+
+
+function show(){
+    let button = document.querySelector("#showMoreBtn");
+    button.addEventListener('click',function show() {
+    // console.log("selected");
+    var hiddenElements = document.querySelectorAll('#p-1');
+    console.log(hiddenElements)
+    for (var i = 0; i < hiddenElements.length; i++) {
+        console.log(hiddenElements[i]);
+        console.log(i);
+      hiddenElements[i].style.display = 'block';
+    }
+  });
+
+
+}
