@@ -107,6 +107,20 @@ a {
 
 }
 
+.paragraph-1 a{
+    font-size: 30px;
+    background: linear-gradient(45deg, rgb(239, 237, 238), rgb(155, 249, 5));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#name{
+    color: rgb(19, 237, 48);
+    font-size: 50px;
+
+}
+
 .projects a{
     background: linear-gradient(45deg, rgb(118, 5, 80), rgb(219, 237, 189));
     -webkit-text-fill-color: transparent;
