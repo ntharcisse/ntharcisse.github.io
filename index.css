@@ -5,28 +5,27 @@ html {
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 
-@supports (font-variation-settings: normal) {
-    :root,
-    body {
-        font-family: InterVariable, sans-serif;
-    }
-}
-
-
 body {
     background-color: rgb(4, 1, 11);
-    color: rgb(69, 73, 79);
-    margin: 20px;
+    color: rgb(150, 153, 156);
+    /* margin: 20px; */
     padding: 20px;
     font-size: 25px;
     font-family:'Reddit Mono', monospace;
+    border-color: rgb(14, 86, 92);
+    border-radius: 3px;
+
+    border-style: dashed;
 }
 
 header {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgb(26, 24, 22);
+    background-color: rgb(1, 3, 20);
+    border-bottom-color: rgb(8, 30, 87);
+    border-bottom-width: 3px;
+    border-style: solid;
     z-index: 9999;
     left: 0;
 }
@@ -53,7 +52,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -105,8 +104,12 @@ a {
 
 #name{
     color: rgb(19, 237, 48);
-    font-size: 50px;
+    font-size: 40px;
 
+}
+
+#social{
+    font-size: 20px;
 }
 
 .projects a{
@@ -138,12 +141,9 @@ a {
 }
 
 .names {
-    padding-right: 50px;
-}
-
-.names {
     position: relative;
     font-size: 20px;
+    padding-right: 50px;
     padding-top: 10%;
     left: 13%;
 }
@@ -161,7 +161,7 @@ a {
     font-size: 18px;
 }
 .last-name{
-    color: aliceblue;
+    color: rgb(89, 90, 90);
     font-style: italic;
 }
 
@@ -230,8 +230,7 @@ a {
     color: wheat;
     font-style: italic;
     margin-bottom: 30px;
-    /* padding: 10px; */
-    /* margin: 10px 0; */
+
 }
 #arrow{
     position: relative;
@@ -239,8 +238,10 @@ a {
     font-size: 20px;
 }
 #message{
-    color:rgb(176, 176, 169);
+    color:rgb(225, 225, 21);
     font-size: 22px;
+    line-height: 1.5;
+    /* text-transform: uppercase; */
     /* word-spacing: 2px; */
 }
 /* blocking bar */
@@ -251,12 +252,11 @@ a {
     position: relative;
     top: 10%;
     background-color: rgb(4, 0, 10);
-    border-color: rgb(14, 14, 15);
+    border-color: rgb(33, 32, 32);
     border-style: solid;
     border-radius: 3px;
-    padding: 9px;
     margin-top: 30px;
-    font-style: italic;
+    font-style: normal;
 }
 
 
@@ -267,7 +267,7 @@ a {
     position: relative;
     left: 13%;
     width: 80%;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .intro-about,
@@ -280,10 +280,11 @@ a {
 
 .intro-about p {
     font-family: monospace;
-    color: hsl(36, 33%, 97%);
+    color: hsl(45, 2%, 43%);
     margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 24px;    
+    font-size: 22px;  
+    line-height: 1.5;  
     word-spacing: 0px;
 }
 
@@ -299,13 +300,6 @@ a {
     justify-content: center;
 }
 
-.intro-skills {
-    color: white;
-}
-
-.stack-fonts {
-    color: white;
-}
 /* tools */
 .tools{
     position: relative;
@@ -339,34 +333,19 @@ a {
 #image-9,
 #image-10
 {
-    background-color: rgb(3, 15, 51);
+    background-color: rgb(1, 4, 10);
     border-radius: 10px;
     padding: 10px;
     width: 90px;
     height: 80px;
     border-style: groove;
-    border-color: rgb(95, 94, 97);
-    border-width: 4px;
+    border-color: rgb(35, 34, 35);
+    border-width: 2px;
     white-space: nowrap;
 }
 
 .name{
     color: hsl(180, 4%, 83%);
-}
-
-
-#p-2 button{
-    background-color: rgb(22, 192, 129);
-    color: #273032;
-    font-size: medium;
-    font-weight: bold;
-    padding: 6px;
-    width: 90px;
-    border: none;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: rgb(146, 149, 148);
-
 }
 
 .aligns{
@@ -417,6 +396,7 @@ a {
     display: grid;
     justify-content: center;
     color: rgb(53, 129, 129);
+    font-size: 22px;
 }
 
 #p-1:hover{
@@ -442,7 +422,7 @@ a {
 @media screen and (max-width: 800px) {
     .main{
         position: relative;
-        width: 100%;
+        width: 95%;
     }
 
     nav ul li {
@@ -471,7 +451,7 @@ a {
     .firstname,
     .last-name
     {
-        font-size: 17px;
+        font-size: 18px;
     }
 
 
@@ -487,40 +467,42 @@ a {
         width: 100%;
         margin: 0;
         left: 0;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(126, 129, 129);
     }
     
     .quotes p{
-        /* left: 3%; */
-        /* width: 100%; */
-        font-size: 10px;
-        /* margin-bottom: 20px; */
+        font-size: 18px;
+        line-height: 1.3;
     }
-    
+
     .intro-about,
     .intro-skills,
     .social-contact,#p-1 {
         left: 0;
-        right: 10%;
-        width: 90%;
+        right: 0;
+        width: 100%;
         font-size: 18px;
     }
-
-    .paragraph-1{
-        padding: 0px;
-
+    .intro-about{
+        width: 90%;
     }
+    .paragraph-1{
+        padding: 3px;
+    }
+
 
 
     .paragraph-1 p{
-        font-size: 19px;
+        font-size: 20px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         letter-spacing: 1px;
+        line-height: 1.5;
+        font-style: normal;
     }
     
     .projects {
         position: relative;
-        justify-content: left;
-        /* width: 100%; */
         padding:0px;
         margin-top: 20px;
         display: grid;
@@ -529,10 +511,7 @@ a {
 
     .map-projects{
         position: relative;
-        width: 110%;
-        float: left;
-        left: -10px;
-        right:1px;
+        width: 100%;
         margin-right: 0;
         margin-left: 0;
     }
