@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
-    font-family: Inter, sans-serif;
+    /* font-family: Inter, sans-serif; */
+    
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 
@@ -10,21 +11,7 @@ html {
         font-family: InterVariable, sans-serif;
     }
 }
-css-doodle {
-    --rule: (
-      @grid: 5 / 8em;
-      --d: @p(45deg, -45deg, 135deg, -135deg);
-      --lg: linear-gradient(@var(--d),#60569e 50%,#000 0);
-      background:
-        @var(--lg) 0 0 / 100% 100%,
-        @var(--lg) 0 0 / 50% 50%;
-    );
-    
-  }
-#css-doodle{
-    display: grid;
-    justify-content: center;
-}
+
 
 body {
     background-color: rgb(4, 1, 11);
@@ -32,6 +19,7 @@ body {
     margin: 20px;
     padding: 20px;
     font-size: 25px;
+    font-family:'Reddit Mono', monospace;
 }
 
 header {
@@ -242,7 +230,7 @@ a {
     color: wheat;
     font-style: italic;
     margin-bottom: 30px;
-    padding: 10px;
+    /* padding: 10px; */
     /* margin: 10px 0; */
 }
 #arrow{
@@ -252,11 +240,10 @@ a {
 }
 #message{
     color:rgb(176, 176, 169);
-    font-size: 25px;
-    word-spacing: 2px;
+    font-size: 22px;
+    /* word-spacing: 2px; */
 }
 /* blocking bar */
-
 
 /* about me introduuction section */
 
@@ -276,7 +263,7 @@ a {
 .intro-about,
 .intro-skills,
 .social-contact{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     position: relative;
     left: 13%;
     width: 80%;
@@ -285,7 +272,7 @@ a {
 
 .intro-about,
 .intro-skills {
-    padding: 20px;
+    padding: 10px;
 }
 .intro-about{
     width: 80%;
@@ -293,15 +280,11 @@ a {
 
 .intro-about p {
     font-family: monospace;
-    color: rgb(179, 177, 173);
+    color: hsl(36, 33%, 97%);
     margin-bottom: 20px;
     margin-top: 20px;
-    opacity: 2px;
-    font-size: 25px;    
-    /* letter-spacing: 1.5px; */
-    /* word-spacing: 3px; */
-    font-style: italic;
-
+    font-size: 24px;    
+    word-spacing: 0px;
 }
 
 .intro-about .h-1,
@@ -415,25 +398,6 @@ a {
     gap: 20px;
 }
 
-/* 
-.p-4,.p-5,.p6{
-    display: block;
-    background-color: red;
-}
-.scroll{
-    position:relative;
-    display: grid;
-    justify-content: center;
-    left: 40%;
-} */
-
-/* #image-a{
-
-    background-color: rgb(242, 243, 246);
-    width: 100px;
-    height: 25px;
-    font-size: 30px;
-} */
 #p-1 p{
     color: rgb(180, 182, 184);
     padding: 0px;
@@ -476,6 +440,11 @@ a {
 }
 
 @media screen and (max-width: 800px) {
+    .main{
+        position: relative;
+        width: 100%;
+    }
+
     nav ul li {
         padding: 1px 5px;
         /* display: block; */
@@ -484,26 +453,47 @@ a {
     nav a{
         display: none;
     }
+
+    .name-section{
+        position: relative;
+        padding-left: 0;
+    }
     
     .names {
-        font-size: 15px;
-        padding: 2px;
+        position: relative;
+        /* font-size: 20px; */
         padding-top: 10%;
         left: 0;
         margin-top: 20px;
     }
+
+    .greeting,
+    .firstname,
+    .last-name
+    {
+        font-size: 17px;
+    }
+
+
     
     .social-contact li {
         font-size: 20px;
-        margin-top: 10px;
+        margin-top: 14px;
         margin-bottom: 10%;
     }
-    
-    .quotes {
-        left: 3%;
+
+    .quotes{
+        position: relative;
         width: 100%;
-        font-size: 16px;
-        margin-bottom: 20px;
+        margin: 0;
+        left: 0;
+    }
+    
+    .quotes p{
+        /* left: 3%; */
+        /* width: 100%; */
+        font-size: 10px;
+        /* margin-bottom: 20px; */
     }
     
     .intro-about,
