@@ -10,7 +10,7 @@ function toggle() {
     let message = document.querySelector(".quotes");
 
 
-    colorChange.addEventListener("click", function() {
+    // colorChange.addEventListener("click", function() {
 
 
         let ids = [".p-1",".p-2",".p-3",".p-4"];
@@ -67,7 +67,7 @@ function toggle() {
             }
       
         }
-    });
+    // });
 }
 
 // not useful down code
