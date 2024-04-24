@@ -44,7 +44,8 @@ function toggle() {
 
 
 
-            }else if(background !== "white"){
+            }
+            else if(background !== "white"){
                 body.style.backgroundColor = colors;
                 allElements[i].style.backgroundColor = "white";
                 allElements[i].style.color = "black"; 

@@ -16,6 +16,9 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.38.4/css-doodle.min.js"></script> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -27,7 +30,7 @@
 <body>
     <header class="head">
         <nav>
-            <h1 class="logo" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">T<span>~H</span></h1>
+            <h1 class="logo" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Tharcisse<span>~H</span></h1>
             <ul>
                 <li><a href="#about">➮About</a></li>
                 <li><a href="#skills">➮Skills</a></li>
@@ -35,17 +38,15 @@
                 <li><a href="#Education">➮Education</a></li>
                 <li id="toggle-icon" onclick="toggle()"><i class="fa fa-adjust"></i></li>
             </ul>
-        </nav>
     </header>
 
     <main class="main">
         <section class="introduction">
             <div class="name-section">
                 <div class="names">
-                    <h1 class="greeting" >HI, I am <span class="firstname">Tharcisse Ntirandekura</span> <span class="last-name"><span id="arrow-1">→ </span> Computer Scientist</h1>
+                    <h1 class="greeting" >HI, I am <span class="firstname">Tharcisse Ntirandekura</span> <span class="last-name"><span id="arrow-1">→ </span> Oberlin College <|> Computer Science</h1>
                 </div>
             </div>
-            <css-doodle id="css-doodle" use="var(--rule)"></css-doodle>
 
         </section>
         <section class="social-contact">
@@ -58,7 +59,7 @@
         <div class="message-box">
             <div class="quotes">
                 <p>
-                    <span id="arrow">→</span><span id='message'>"Software is like entropy: It is difficult to grasp, weighs nothing, and obeys the second law of thermodynamics; i.e., it always increases 💯"</span>
+                    <span id="arrow">→</span><span id='message'>Learning never gets odds </span>
                 </p>
             </div>
 
@@ -67,14 +68,31 @@
 
     <div class="intro-about">
         <h1 id="about" class="h-1">~ About me</h1>
-        <h2 class="h-2">Introduction</h2>
         <div class="paragraph-1">
+            <!-- <h1 class="text-body-secondary">Hi, My name is Tharcisse</h1> -->
             <p>
-                I am Tharcisse, a software engineer and data scientist. As a computer science student,I am deeply passionate about software development and its security. I believe that by addressing the challenges and vulnerabilities in software systems, we can create a safer digital environment for everyone. I am fascinated by the intricate details of software architecture, algorithms, and data structures, and I enjoy finding innovative solutions to complex problems.
+                <span>Hi, My name is Tharcisse </span><br>
+
+                As an undergraduate students majaring in computer science at <span style="color: hsl(0, 100%, 50%);"><a  href="https://www.oberlin.edu/" style="color: red;">Oberlin College</a></span>,
+                I am deeply focusing on making softwares with <span style="color: rgb(65, 65, 230);">robust security </span> 
+                to prevent data breaches of any kind.<br><br>
+
+                I have been conducting research on <span>Next generation LED Matrices : Simplified solution on rasperry Pi using python</span>
+                <span class="btn btn-danger" style="color: white;"><a href="https://oberlin.digication.com/tharcisse-ntirandekura-1/undergraduate-research">more.</a></span>
+                
+                I have also been doing research on how to use new technologies to imporve classroom experience especially 
+                introductory courses in computer science which imporve creativity in students.
+
             </p>
-            <span id="name">→</span><a  id="social" href="http://socials.html"> View my social activities....~ here</a>
+            <span id="name">→</span><button class="btn btn-primary">more</button>
         </div>
     </div>
+
+    <section id="education">
+        <h1 class="h-1">~ Education</h1>
+
+        <!-- <img class="img-thumbnail" alt="..." src="images/oberlin.webp"> -->
+    </section>
 
     <section class="tools">
         <h1 class="h-1">~ Tools</h1>
@@ -97,121 +115,77 @@
 
     <section id="projects" class="projects">
         <h1 class="h-1">~ Projects</h1>
-        <div class="map-projects">
-            <div id="p-1" class="p-1">
-                <h1>collatz visualizer</h1>
-                <p>
-                   <p><span id="arrow">→</span>Give you ability to visualize sequences over each input</p>
-                    <p><span id="arrow">→</span> More customizable for new learners</p>
-                    <p><span id="arrow">→</span> <a href="http://tharack.pythonanywhere.com/graph" target="_blank">Visit here</a></p>
+        <div class="row">
+            <div class="col-sm-5 mb-4 mb-sm-3  ">
+
+              <div class="card bg-black border-secondary text-white">
+                <div class="card-body">
+                  <h5 class="card-title">RGB matrix python library</h5><br>
+                  <p><span id="arrow">→</span> Controlling LED matrix with python</p>
+                  <p class="card-text">This is a customized python library designed for controlling LED matrices and it
+                    is able to be run on Linux
                 </p>
-                <div id="btn">
-                    <button>Django</button>
-                    <button>javascript</button>
-                    <button>html</button>
-                    <button>chart.js</button>
+                  <a href="#" class="btn btn-primary">Python</a>
+                  <a href="#" class="btn btn-primary">Raspberry pi</a>
+                  <a href="#" class="btn btn-primary">Git</a>
+                  <a href="#" class="btn btn-danger">live demo</a>
                 </div>
+              </div>
+
             </div>
-            <div id="p-1" class="p-2">
-                <h1>RGB Python Libary</h1>
-                <p>
-                    <p><span id="arrow">→</span> Controlling LED matrix with python</p>
-                    <p><span id="arrow">→</span> Exploring more python flexibilty</p>
-                    <p><span id="arrow">→</span> <a href="http://">Visit here</a></p>
-                </p>
-                <div id="btn">
-                    <button>Django</button>
-                    <button>javascript</button>
-                    <button>html</button>
-                    <button>chart.js</button>
+
+            <div class="col-sm-5">
+              <div class="card bg-black border-secondary text-white">
+                <div class="card-body">
+                  <h5 class="card-title">Brain Simulation</h5><br>
+                  <p class="card-text">With the knowledge of neurons computation and Octave programming language, I implemented
+                    a brain simulation for brain activity.
+                  </p>
+                  <a href="#" class="btn btn-primary">Octave</a>
+                  <a href="#" class="btn btn-primary">Replit</a>
+                  <a href="#" class="btn btn-primary">Neuros</a>
+                  <a href="#" class="btn btn-danger">visit</a>
                 </div>
+              </div>
             </div>
-            <div id="p-1" class="p-3">
-                <h1>Brain Simulation</h1>
 
-                    <p>
-                        <p><span id="arrow">→</span> Simulated brain activity for actions processing</p>
-                        <p><span id="arrow">→</span> Made octave Visualizer</p>
-                        <p><span id="arrow">→</span> <a href="http://">Visit here <a class="fa fa-github" href="https://github.com/tharcissentirandekura" target="_blank"></a></a></p>
-
-                    </p>
-                    <div id="btn">
-                        <button>Octave</button>
-                        <button>Replit</button>
-                        <button>Spider IDE</button>
-                        <button>Algebra</button>
-                    </div>
-            </div>
-            <!-- <div class="scroll">
-                <button id="showMoreBtn" onclick="show()"><img id="image-a" src="images/211687_down_arrow_icon.svg" alt="" srcset=""></button>
-            </div> -->
-            
-            <div id="p-1" class="p-4" class="hidden">
-                <h1>Dice Roll</h1>
-                <p>
-                    <p><span id="arrow">→</span> Implemented a dice rolling game</p>
-                    <p><span id="arrow">→</span> Easy to use and have fun :)</p>
-                    <p><span id="arrow">→</span> <a href="https://dicing.netlify.app/">Visit here</a></p>
-                </p>
-                <div id="btn">
-                    <button>javascript</button>
-                    <button <span style="color: black;">Html5</span></button>
-                    <button <span style="color: black;">css</span></button>
-                    <button>Netlify</button>
+            <div class="col-sm-5">
+                <div class="card bg-black border-secondary text-white">
+                  <div class="card-body">
+                    <h5 class="card-title">Tic-Tac-Toe</h5><br>
+                    <p><span id="arrow">→</span> Fun game</p>
+                    <p class="card-text">This is an implementation of Tic Tac Toe game for two players</p>
+                    <a href="#" class="btn btn-primary">Python </a>
+                    <a href="#" class="btn btn-primary">github </a>
+                    <a href="#" class="btn btn-danger">visit </a>
+                  </div>
                 </div>
+              </div>
 
-            </div>
-
-            <div id="p-1" class="p-5">
-                <h1>Tic-Tac-Toe</h1>
-
-                    <p>
-                        <p><span id="arrow">→</span>Made a tic tac toe game to have fun :)</p>
-                        <p><span id="arrow">→</span> Build in python</p>
-                        <p><span id="arrow">→</span> <a href="http://">Visit here <a class="fa fa-github" href="https://github.com/tharcissentirandekura" target="_blank"></a></a></p>
-
+            <div class="col-sm-5">
+                <div class="card bg-black border-secondary text-white">
+                  <div class="card-body">
+                    <h5 class="card-title">QRCODE Generator</h5><br>
+                    <p><span id="arrow">→</span> You should have heard of collatz conjecture</p>
+                    <p class="card-text">This is an implementation of a simple website to help visuaalize collaatz sequences
                     </p>
-                    <div id="btn">
-                        <button>Python3</button>
-                        <button>Vs Code</button>
-                        <button>Git</button>
-                        <button>Github</button>
-                    </div>
-            </div>
+                    <a href="#" class="btn btn-primary">Django </a>
+                    <a href="#" class="btn btn-primary">chart.js </a>
+                    <a href="#" class="btn btn-primary">jascript</a>
+                    <a href="https://tharack.pythonanywhere.com/graph" class="btn btn-btn btn-danger">Live demo</a>
+                  </div>
+                </div>
+              </div>
 
-            <div id="p-1" class="p-6">
-                <h1>QRCODE Generator</h1>
 
-                    <p>
-                        <p><span id="arrow">→</span> A customizable Qrcode generator :)</p>
-                        <p><span id="arrow">→</span> Functionality for choosing colors</p>
-                        <p><span id="arrow">→</span> <a href="http://">Visit here <a class="fa fa-github" href="https://github.com/tharcissentirandekura" target="_blank"></a></a></p>
-
-                    </p>
-                    <div id="btn">
-                        <button>Django</button>
-                        <button>Vs Code</button>
-                        <button>Html</button>
-                        <button>css</button>
-                    </div>
-            </div>
-            
-        </div>
+          </div>
 
     </section>
     <section id="projects" class="projects" style="background-color: rgb(8, 4, 38);">
         <h1 class="h-1"> ~ Contact</h1>
         <div class="wrapper">
-            <form class="contact">
-                <h1 class="header" style="font-size: 20px;">Send a message here</h1>
-
-                <div class="inputs">
-                    <input type="text" name="names" placeholder="Your full name">
-                    <input type="email" name="email" placeholder="Enter your email">
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <button type="submit">Send</button>
-                </div>
-            </form>
+            <h2>Email : tharcissentira@gmail.com</h2>
+            <h2>Phone : 440 506 5881</h2>
         </div>
 </body>
 </html>
