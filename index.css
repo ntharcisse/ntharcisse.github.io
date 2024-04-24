@@ -269,6 +269,7 @@ nav li a{
     margin-top: 30px;
     font-style: normal;
     color: white;
+    padding-bottom: 10%;
 }
 
 
@@ -309,6 +310,34 @@ nav li a{
 .intro-about .h-2{
     display: grid;
     justify-content: center;
+}
+
+#education{
+    position: relative;
+    background-color: #0B0E2F;
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 5px;
+    height: auto;
+}
+
+.edu > div{
+    display: grid;
+    justify-content: left;
+}
+
+.oberlin img{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.content  h1{
+    font-size: 20px;
+    padding-left: 2rem;
 }
 
 /* tools */
@@ -389,12 +418,17 @@ nav li a{
     opacity: 90%;
     padding: 30px;
 }
+
+
+
+
  .projects .h-1{
     display: grid;
     justify-content: left;
     font-size: 25px;
     color: rgb(50, 191, 227);
 }
+
 
 
 
