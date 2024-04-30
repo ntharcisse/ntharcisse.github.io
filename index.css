@@ -99,6 +99,7 @@ nav li a{
     position: relative;
     padding-bottom: 10%;
     width: 100%;
+    margin-left: 20px;
    
 }
 
@@ -155,8 +156,9 @@ nav li a{
 }
 
 .names h1 > .firstname{
-    font-size: 22px;
+    font-size: 27px;
     font-weight: bold;
+    color: white;
 }
 .names h1 > .last-name{
     font-size: 22px;
@@ -176,7 +178,7 @@ nav li a{
     font-size: 18px;
 }
 .last-name{
-    color: white;
+    color: rgb(32, 219, 229);
 
 }
 
