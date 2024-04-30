@@ -27,7 +27,7 @@
 
 </head>
 
-<body>
+<body class="bg-dark bg-black">
     <header class="head">
         <nav>
             <h1 class="logo" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Tharcisse<span>~H</span></h1>
@@ -36,7 +36,7 @@
                 <li><a href="#skills">➮Skills</a></li>
                 <li><a href="#projects">➮Projects</a></li>
                 <li><a href="#Education">➮Education</a></li>
-                <li id="toggle-icon" onclick="toggle()"><i class="fa fa-adjust"></i></li>
+                <li id="toggle-icon"><i class="fa fa-adjust"></i></li>
             </ul>
     </header>
 
@@ -44,7 +44,7 @@
         <section class="introduction">
             <div class="name-section">
                 <div class="names">
-                    <h1 class="greeting" >HI, I am <span class="firstname">Tharcisse Ntirandekura</span> <span class="last-name"><span id="arrow-1">→ </span> Oberlin College <|> Computer Science</h1>
+                    <h1 class="greeting" >HI, I am <span class="firstname">THARCISSE NTIRANDEKURA</span> <span class="last-name"><span id="arrow-1">→ </span> Oberlin College <|> Computer Science</h1>
                 </div>
             </div>
 
@@ -61,6 +61,9 @@
                 <p>
                     <span id="arrow">→</span><span id='message'>Learning never gets odds </span>
                 </p>
+                <p>
+                <span id='message'>Learn Coding alonside your values</span>
+              </p>
             </div>
 
         </div>
@@ -69,22 +72,19 @@
     <div class="intro-about">
         <h1 id="about" class="h-1">~ About me</h1>
         <div class="paragraph-1">
-            <!-- <h1 class="text-body-secondary">Hi, My name is Tharcisse</h1> -->
+            <h1 class="text-body-primary">Hi, My name is Tharcisse</h1>
             <p>
-                <span>Hi, My name is Tharcisse </span><br>
 
                 As an undergraduate students majaring in computer science at <span style="color: hsl(0, 100%, 50%);"><a  href="https://www.oberlin.edu/" style="color: red;">Oberlin College</a></span>,
-                I am deeply focusing on making softwares with <span style="color: rgb(65, 65, 230);">robust security </span> 
-                to prevent data breaches of any kind.<br><br>
-
+                I am deeply focusing on making softwares with <span style="color: rgb(135, 200, 13);">robust security </span> 
+                to prevent data breaches of any kind.<br>
                 I have been conducting research on <span>Next generation LED Matrices : Simplified solution on rasperry Pi using python</span>
-                <span class="btn btn-danger" style="color: white;"><a href="https://oberlin.digication.com/tharcisse-ntirandekura-1/undergraduate-research">more.</a></span>
                 
                 I have also been doing research on how to use new technologies to imporve classroom experience especially 
                 introductory courses in computer science which imporve creativity in students.
 
             </p>
-            <span id="name">→</span><button class="btn btn-primary">more</button>
+            <span id="name">→</span><a class="btn btn-primary" href="https://oberlin.digication.com/tharcisse-ntirandekura-1/undergraduate-research">more</a>
         </div>
     </div>
 
@@ -96,15 +96,14 @@
           <img src="images/oberlin.webp"   alt="Oberlin college">
         </div>
         <div class="content text-light">
-          <h1>Bachelor’s Degree, Oberlin College</h1><br>
-          <h1><Span style="color: rgb(204, 7, 145);"> Majoring </Span>  Computer Science  <span style="float: right;">Fall 2023 – Spring 2027</span></h1>
+          <h1><span id="arrow"> ~ </span>  Bachelor’s Degree, <span style="color: red;">Oberlin College</span></h1><br>
+          <h1><Span style="color: rgb(204, 7, 145);"><span id="arrow"> → </span> Majoring </Span>  Computer Science  <span style="float: right;">Fall 2023 – Spring 2027</span></h1>
           <ul">
-            <li >
-            <h1>STRONG (Science and Technology Research Opportunities for a New Generation) Scholar</h1><br>
-            <h1>Bonner Scholar (Community based volunteering activities) for Leadership</h1><br>
-            <h1>John F. Oberlin Scholarship Recipient</h1>
+            <div>
+              <h1><span id="arrow">→</span>STRONG (Science and Technology Research Opportunities for a New Generation) Scholar</h1><br>
+            <h1><span id="arrow">→</span>John F. Oberlin Scholarship Recipient</h1>
             <div class="courses">
-              <h1><span style="color: greenyellow;">Relevant Coursework:</span></h1>
+              <h1><span style="color: greenyellow;"><span id="arrow">→</span>Relevant Coursework:</span></h1>
 
               <div class="course">
                 <ul style="margin-left: 4rem;">
@@ -116,7 +115,13 @@
                 </ul>
               </div>
             </div>
-          </li>
+            <div>
+              <h1><span style="color: greenyellow;"><span id="arrow"></span>Check my whole degree</span></h1>
+              <ul style="margin-left: 4rem;">
+                <a href="http://">Check here</a>
+              </ul>
+            </div>
+          </div>
         </ul>
         </div>
 
@@ -146,7 +151,7 @@
     <section id="projects" class="projects">
         <h1 class="h-1">~ Projects</h1>
         <div class="row">
-            <div class="col-sm-5 mb-4 mb-sm-3  ">
+            <div class="col-sm-5 mb-5 mb-sm-3  ">
 
               <div class="card bg-black border-secondary text-white">
                 <div class="card-body">
@@ -195,10 +200,9 @@
             <div class="col-sm-5">
                 <div class="card bg-black border-secondary text-white">
                   <div class="card-body">
-                    <h5 class="card-title">QRCODE Generator</h5><br>
-                    <p><span id="arrow">→</span> You should have heard of collatz conjecture</p>
-                    <p class="card-text">This is an implementation of a simple website to help visuaalize collaatz sequences
-                    </p>
+                    <h5 class="card-title">Collatz sequence</h5><br>
+                    <p class="card-text"><span id="arrow">→</span>Let's discover collatz together</p>
+                    <p class="card-text">This is an implementation of  Collatz sequences visualizer</p>
                     <a href="#" class="btn btn-primary">Django </a>
                     <a href="#" class="btn btn-primary">chart.js </a>
                     <a href="#" class="btn btn-primary">jascript</a>
