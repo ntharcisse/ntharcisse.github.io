@@ -333,6 +333,12 @@ nav li a{
     justify-content: left;
 }
 
+.conainter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .oberlin img{
     position: relative;
     width: 300px;
@@ -570,14 +576,23 @@ nav li a{
         justify-content: center;
     }
 
-    .map-projects{
-        position: relative;
-        width: 100%;
-        margin-right: 0;
-        margin-left: 0;
+    .container{
+        display: flex;
+        flex-direction: column;
     }
 
+    .content{
+        display: grid;
+        justify-content: center;
+    }
+    img{
+        position: relative;
+        width: 1000px;
+    }
 
+    .content{
+        padding-top: 30px;
+    }
     
     #p-1 {
         position: relative;
